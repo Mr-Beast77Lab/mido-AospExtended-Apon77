@@ -13,15 +13,6 @@
 4. Just sync sources, run build commands and upload. That's it.
 
 ## Steps:
-a. We will auto create a folder according to your repository name. So, no need to create folder again. ROM source will be synced at /tmp/mido/AospExtended/Apon77
-
-b. We have already setup build environment. So no need to setup build environment. 
-
-c. We also use ccache automatically. So no need to use ccache from your side.
-
-d. Just sync sources, run build commands and upload. That's it.
-
-
 1. Make device tree of Redmi Note 4 compatible with AospExtended by [bringup commit](https://github.com/Apon77/aex/commit/7b64c1c6cc477ea44e50664e4e9c6739ffcd7054)
 2. Initialize the AospExtended Source
 
@@ -61,6 +52,11 @@ If you used local manifest to clone these trees, you must skip cloning these tre
 `m aex -j$(nproc --all)`
 
 7. Upload the output zip file (AospExtended-8.0-mido*.zip) to a safe place
+`up(){
+	curl --upload-file $1 https://transfer.sh/$(basename $1); echo
+	# 14 days, 10 GB limit
+}
+`
 8. Share the links in your community and inside this repository (in Instruction for users.md file). People should be able to download your ROM if they visit this repository.
 9. If you want to update you device, kernel or vendor trees and learn more how to build ROMS and modify it according to your need, please check these links and search in google for more information.
 https://github.com/AliHasan7671/guides/commit/33361bb2c78af01426350ef21167d742f44481fd
