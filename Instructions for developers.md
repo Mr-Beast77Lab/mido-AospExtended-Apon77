@@ -13,5 +13,7 @@ Clone device trees for Redmi Note 4
 Change repository of AospExtended if needed by removing and reclonig them, or by using local manifest.
 Run the build commands for building AospExtended
 `source build/envsetup.sh`
+
 `lunch aosp_mido-user`
+
 `m aex -j$(nproc --all)`
