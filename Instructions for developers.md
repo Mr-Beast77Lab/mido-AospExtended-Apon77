@@ -6,6 +6,9 @@
 ##### 5. Repository name must be like device_code_name-RomName-Builder's_Name (like mido-AospExtended-Apon77)
 ##### 6. Use one repository to build one ROM for one device by one developer. If you need to build PixelExperience ROM for whyred device, the repository name should be like this whyred-PixelExperience-Apon77
 ##### 7. Keep license untouched.
+##### 8. Features and changelogs of your rom should be told by any means.
+
+Here I used a video [link](https://github.com/Mr-Beast77Lab/mido-AospExtended-Apon77#aospextended-custom-rom-for-redmi-note-4) to show the features, and a telegram [link](https://github.com/Mr-Beast77Lab/mido-AospExtended-Apon77/blob/main/Instructions%20for%20users.md#1-download-latest-rom-zip-file) to show changelogs, you can use xda link too
 
 ## Notes:
 ##### 1. We will auto create a folder according to your repository name. So, no need to create folder again. ROM source will be synced at /tmp/mido/AospExtended/Apon77
