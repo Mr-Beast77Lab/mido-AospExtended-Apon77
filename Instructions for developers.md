@@ -7,9 +7,13 @@ Requirements:
 6. Keep license untouched.
 
 Steps:
+
 a. We will auto create a folder according to your repository name. So, no need to create folder again. ROM source will be synced at /tmp/mido/AospExtended/Apon77
+
 b. We have already setup build environment. So no need to setup build environment. 
+
 c. We also use ccache automatically. So no need to use ccache from your side.
+
 d. Just sync sources, run build commands and upload. That's it.
 
 
