@@ -35,28 +35,31 @@ We need to clone kernel tree in kernel/xiaomi/mido said in [here](https://github
 We need to clone vendor tree in vendor/xiaomi said in [here](https://github.com/Apon77/aex/blob/aex/BoardConfig.mk#L167).
 We don't need to clone common device tree, because not said anywhere in [Boardconfig.mk](https://github.com/Apon77/aex/blob/aex/BoardConfig.mk)
 
-`git clone -b aex https://github.com/Apon77/aex device/xiaomi/mido --depth=1`
-
-`git clone -b aex https://github.com/Apon77/aexk kernel/xiaomi/mido --depth=1`
-
-`git clone -b aex https://github.com/Apon77/aexv vendor/xiaomi --depth=1`
+```
+git clone -b aex https://github.com/Apon77/aex device/xiaomi/mido --depth=1
+git clone -b aex https://github.com/Apon77/aexk kernel/xiaomi/mido --depth=1
+git clone -b aex https://github.com/Apon77/aexv vendor/xiaomi --depth=1
+```
 
 If you used local manifest to clone these trees, you must skip cloning these trees in this step.
 
 6. Run the build commands for building AospExtended
 
-`source build/envsetup.sh`
-
-`lunch aosp_mido-user`
-
-`m aex -j$(nproc --all)`
+```
+source build/envsetup.sh
+lunch aosp_mido-user
+m aex -j$(nproc --all)
+```
 
 7. Upload the output zip file (AospExtended-8.0-mido*.zip) to a safe place
-`up(){
+```
+up(){
 	curl --upload-file $1 https://transfer.sh/$(basename $1); echo
 	# 14 days, 10 GB limit
 }
-`
+
+up out/target/product/mido/*.zip
+```
 8. Share the links in your community and inside this repository (in Instruction for users.md file). People should be able to download your ROM if they visit this repository.
 9. If you want to update you device, kernel or vendor trees and learn more how to build ROMS and modify it according to your need, please check these links and search in google for more information.
 https://github.com/AliHasan7671/guides/commit/33361bb2c78af01426350ef21167d742f44481fd
