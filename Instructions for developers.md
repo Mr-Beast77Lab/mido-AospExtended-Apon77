@@ -50,5 +50,6 @@ If you used local manifest to clone these trees, you must skip cloning these tre
 `lunch aosp_mido-user`
 
 `m aex -j$(nproc --all)`
+
 7. Upload the output zip file (AospExtended-8.0-mido*.zip) to a safe place
 8. Share the links in your community and inside this repository (in Instruction for users.md file). People should be able to download your ROM if they visit this repository.
