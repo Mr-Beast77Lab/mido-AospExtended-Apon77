@@ -1,4 +1,4 @@
-Requirements:
+## Requirements:
 1. Proper instruction about how to build your ROM as a developer
 2. Proper instruction about how to install your ROM as a user.
 3. Your repository must be able to understand by anyone without any extra knowledge of before.
@@ -6,8 +6,13 @@ Requirements:
 5. Repository name must be like device_code_name-RomName-Builder's_Name (like mido-AospExtended-Apon77)
 6. Keep license untouched.
 
-Steps:
+## Notes:
+1. We will auto create a folder according to your repository name. So, no need to create folder again. ROM source will be synced at /tmp/mido/AospExtended/Apon77
+2. We have already setup build environment. So no need to setup build environment. 
+3. We also use ccache automatically. So no need to use ccache from your side.
+4. Just sync sources, run build commands and upload. That's it.
 
+## Steps:
 a. We will auto create a folder according to your repository name. So, no need to create folder again. ROM source will be synced at /tmp/mido/AospExtended/Apon77
 
 b. We have already setup build environment. So no need to setup build environment. 
@@ -57,3 +62,8 @@ If you used local manifest to clone these trees, you must skip cloning these tre
 
 7. Upload the output zip file (AospExtended-8.0-mido*.zip) to a safe place
 8. Share the links in your community and inside this repository (in Instruction for users.md file). People should be able to download your ROM if they visit this repository.
+9. If you want to update you device, kernel or vendor trees and learn more how to build ROMS and modify it according to your need, please check these links and search in google for more information.
+https://github.com/AliHasan7671/guides/commit/33361bb2c78af01426350ef21167d742f44481fd
+https://github.com/nathanchance/Android-Tools/blob/master/Guides/Building_AOSP.txt
+
+
