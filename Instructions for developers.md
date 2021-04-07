@@ -25,6 +25,7 @@ You can also clone device tree, common device tree, kernel tree, vendor tree by 
 `git clone https://github.com/Apon77Lab/android_.repo_local_manifests.git --depth 1 -b aex .repo/local_manifests`
 
 4. Sync the source.
+
 `repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8`
 
 5. Clone device tree, common device tree (if exists), kernel tree and vendor tree for Redmi Note 4 to specific folder. Where to clone trees is told inside BoardConfig.mk file.
@@ -40,20 +41,14 @@ We don't need to clone common device tree, because not said anywhere in [Boardco
 
 `git clone -b aex https://github.com/Apon77/aexv vendor/xiaomi --depth=1`
 
-If you used local manifest to clone these trees, you should skip cloning trees in this step.
+If you used local manifest to clone these trees, you must skip cloning these trees in this step.
 
-4. Change repository of AospExtended if needed by removing and reclonig them, or by using [local manifest](https://forum.xda-developers.com/t/learn-about-the-repo-tool-manifests-and-local-manifests-and-5-important-tips.2329228/).
-
-`git clone https://github.com/Apon77Lab/android_.repo_local_manifests.git --depth 1 -b aex .repo/local_manifests`
-
-5. Run the build commands for building AospExtended
+6. Run the build commands for building AospExtended
 
 `source build/envsetup.sh`
 
 `lunch aosp_mido-user`
 
 `m aex -j$(nproc --all)`
-6. Upload the output zip file (AospExtended-8.0-mido*.zip) to a safe place
-
-
-7. Share the links in your community and inside this repository (in Instruction for users.md file). People should be able to download your ROM if they visit this repository.
+7. Upload the output zip file (AospExtended-8.0-mido*.zip) to a safe place
+8. Share the links in your community and inside this repository (in Instruction for users.md file). People should be able to download your ROM if they visit this repository.
