@@ -65,8 +65,8 @@ up(){
 up out/target/product/mido/*.zip
 ```
 ##### 8. All these steps should be inside build_rom.sh script like [this](https://github.com/Mr-Beast77Lab/mido-AospExtended-Apon77/blob/main/build_rom.sh).
-##### 8. Share the download link inside this repository (in [Instruction for users.md](https://github.com/Mr-Beast77Lab/mido-AospExtended-Apon77/blob/main/Instructions%20for%20users.md#1-download-latest-rom-zip-file) file) and in your community (like xda-developer, telegram, websites etc.). Users should be able to download your built ROM if they visit this repository.
-##### 9. If you want to update you device, kernel or vendor trees and learn more how to build ROMS and modify it according to your need, please check these links and search in google for more information.
+##### 9. Share the download link inside this repository (in [Instruction for users.md](https://github.com/Mr-Beast77Lab/mido-AospExtended-Apon77/blob/main/Instructions%20for%20users.md#1-download-latest-rom-zip-file) file) and in your community (like xda-developer, telegram, websites etc.). Users should be able to download your built ROM if they visit this repository.
+##### 10. If you want to update you device, kernel or vendor trees and learn more how to build ROMS and modify it according to your need, please check these links and search in google for more information.
 https://github.com/AliHasan7671/guides/commit/33361bb2c78af01426350ef21167d742f44481fd
 https://github.com/nathanchance/Android-Tools/blob/master/Guides/Building_AOSP.txt
 
