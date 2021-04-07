@@ -8,8 +8,9 @@ Requirements:
 
 Steps:
 a. We will auto create a folder according to your repository name. So, no need to create folder again. ROM source will be synced at /tmp/mido/AospExtended/Apon77
-b. We have already setup build environment. So no need to setup build environment.
-
+b. We have already setup build environment. So no need to setup build environment. 
+c. We also use ccache automatically. So no need to use ccache from your side.
+d. Just sync sources, run build commands and upload. That's it.
 
 
 1. Make device tree of Redmi Note 4 compatible with AospExtended by [bringup commit](https://github.com/Apon77/aex/commit/7b64c1c6cc477ea44e50664e4e9c6739ffcd7054)
@@ -25,13 +26,16 @@ We need to clone kernel tree in kernel/xiaomi/mido said in [here. https://github
 We need to clone vendor tree in vendor/xiaomi said in here https://github.com/Apon77/aex/blob/aex/BoardConfig.mk#L167
 We don't need to clone common device tree, because not said anywhere in https://github.com/Apon77/aex/blob/aex/BoardConfig.mk
 
-`git clone https://github.com/Apon77/aex device/xiaomi/mido`
+`git clone -b aex https://github.com/Apon77/aex device/xiaomi/mido --depth=1`
 
-`git clone https://github.com/Apon77/aexk kernel/xiaomi/mido`
+`git clone -b aex https://github.com/Apon77/aexk kernel/xiaomi/mido --depth=1`
 
-`git clone https://github.com/Apon77/aexv vendor/xiaomi`
+`git clone -b aex https://github.com/Apon77/aexv vendor/xiaomi --depth=1`
 
-4. Change repository of AospExtended if needed by removing and reclonig them, or by using local manifest. https://forum.xda-developers.com/t/learn-about-the-repo-tool-manifests-and-local-manifests-and-5-important-tips.2329228/
+4. Change repository of AospExtended if needed by removing and reclonig them, or by using [local manifest](https://forum.xda-developers.com/t/learn-about-the-repo-tool-manifests-and-local-manifests-and-5-important-tips.2329228/).
+
+`git clone https://github.com/Apon77Lab/android_.repo_local_manifests.git --depth 1 -b aex .repo/local_manifests`
+
 5. Run the build commands for building AospExtended
 
 `source build/envsetup.sh`
@@ -40,4 +44,6 @@ We don't need to clone common device tree, because not said anywhere in https://
 
 `m aex -j$(nproc --all)`
 6. Upload the output zip file (AospExtended-8.0-mido*.zip) to a safe place
+
+
 7. Share the links in your community and inside this repository (in Instruction for users.md file). People should be able to download your ROM if they visit this repository.
