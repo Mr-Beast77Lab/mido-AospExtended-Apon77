@@ -4,7 +4,7 @@
 ##### 3. Your repository must be able to understand by anyone without any extra knowledge of before.
 ##### 4. Use this repository as a standard and change according to your device and ROM
 ##### 5. Repository name must be like device_code_name-RomName-Builder's_Name (like mido-AospExtended-Apon77)
-##### 6. Use one repository to build one ROM for one device by one developer. If you need to build another ROM for another device, the repository name should be like this whyred-PixelExperience-Apon77
+##### 6. Use one repository to build one ROM for one device by one developer. If you need to build PixelExperience ROM for whyred device, the repository name should be like this whyred-PixelExperience-Apon77
 ##### 7. Keep license untouched.
 
 ## Notes:
